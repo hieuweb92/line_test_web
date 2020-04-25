@@ -3,7 +3,7 @@ import moment from 'moment-timezone';
 import { Badge, DatePicker, Space } from 'antd';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { TIME_ZONE } from '../../../configs/App';
+import { FORMAT_DATE, TIME_ZONE } from '../../../configs/App';
 import * as PostActions from '../../../redux/actions/PostActions';
 
 moment.tz.setDefault(TIME_ZONE);
@@ -51,7 +51,7 @@ function DateTimePicker(props) {
         value={props.postDetail?.scheduledTime ? moment(props.postDetail.scheduledTime) : null}
         disabled={props.disabled}
         placeholder=""
-        format="MM/DD/YYYY HH:mm"
+        format={FORMAT_DATE}
         disabledDate={disabledDate}
         disabledTime={disabledTime}
         showTime={{ defaultValue: moment() }}

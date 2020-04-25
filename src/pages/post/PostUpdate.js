@@ -16,7 +16,7 @@ function PostUpdate() {
   return (
     <Fragment>
       <PageHeader ghost={false} title="Timeline post" />
-      <PostFrom postId={match.params.id} />
+      <PostFrom postId={Number(match.params.id)} />
     </Fragment>
   );
 }

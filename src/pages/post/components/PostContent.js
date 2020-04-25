@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { POST_TYPES } from '../../../redux/constants/PostConstants';
 import PostImages from './PostImages';
 
 function PostContent(props) {
-  useEffect(() => {
-    console.log('render post-content');
-  });
-
   switch (props.postType) {
     case POST_TYPES.IMAGE:
       return <PostImages />;
