@@ -28,7 +28,6 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 const renderPostContent = (post) => {
-
   switch (post.type) {
     case POST_TYPES.IMAGE:
       return <ImageContent images={post.images} />;

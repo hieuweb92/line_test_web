@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Radio, Tooltip } from 'antd';
 import {
   GiftOutlined,
@@ -24,10 +24,6 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 function PostTypeSelect(props) {
-  useEffect(() => {
-    console.log('render post-type-select');
-  });
-
   return (
     <Radio.Group
       className="post-type-select"

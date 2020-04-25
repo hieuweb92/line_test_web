@@ -23,10 +23,6 @@ function PostImages(props) {
   const [uploadLoading, setUploadLoading] = useState(false);
 
   useEffect(() => {
-    console.log('render post-images');
-  });
-
-  useEffect(() => {
     return () => {
       props.actions.changePostDetail({ images: [] });
     };

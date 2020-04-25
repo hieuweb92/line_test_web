@@ -9,7 +9,7 @@ const initialState = {
   },
   filters: {
     page: 1,
-    limit: 10
+    limit: 2
   },
   listPosts: [],
   postDetail: null,
