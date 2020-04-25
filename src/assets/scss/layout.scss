@@ -1,0 +1,34 @@
+@import "variabls";
+
+.main-wrapper {
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  padding: {
+    left: 15px;
+    right: 15px;
+  }
+  @media #{$tablet-device} {
+    width: 750px;
+  }
+  @media #{$desktop-device} {
+    width: 970px;
+  }
+  @media #{$laptop-device, $extraBig-device} {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
