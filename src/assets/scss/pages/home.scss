@@ -1,9 +1,18 @@
+@import "../variabls";
+
 .ant-timeline {
   &.posts-timeline {
     &.ant-timeline-label {
       .ant-timeline-item-label {
         top: -5px;
         width: calc(20% - 12px);
+        @media #{$tablet-device,$large-mobile, $small-mobile} {
+          text-align: left;
+          left: - 4px;
+          width: initial;
+          margin: 0 0 0 26px;
+        }
+
         .ant-btn-link {
           padding: 0 5px;
           height: inherit;
@@ -15,6 +24,12 @@
         top: -5px;
         left: calc(20% - 4px);
         width: calc(80% - 14px);
+        @media #{$tablet-device,$large-mobile, $small-mobile} {
+          top: 20px;
+          margin-bottom: 25px;
+          left: -4px !important;
+          width: initial !important;
+        }
       }
 
       .anticon-clock-circle {
@@ -36,6 +51,9 @@
       .ant-timeline-item-head,
       .ant-timeline-item-head-custom {
         left: 20%;
+        @media #{$tablet-device,$large-mobile, $small-mobile} {
+          left: 0;
+        }
       }
     }
 
@@ -55,13 +73,16 @@
 
     .slider-images {
       margin: 0 -5px;
+
       .slick-track {
         margin-left: initial;
         margin-right: initial;
       }
+
       .slick-slide > div {
         padding: 0 5px;
       }
+
       .image-item {
         position: relative;
         padding-top: 56.25%;
